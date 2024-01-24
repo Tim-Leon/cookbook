@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
+            prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.neon.cookbook.Navigator">
+  <effect>
+    <DropShadow>
+      <color>
+        <Color red="1.0" green="1.0" blue="1.0"/>
+      </color>
+    </DropShadow>
+  </effect>
+  <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+    <Image url="@../../../Online%20Cooking%20Class%20Booking%20Discount%20Instagram%20Post%20(1).png"/>
+  </ImageView>
+  <Label fx:id="userDisplay" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutY="180.0"
+         prefHeight="63.0" prefWidth="253.0" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS"
+         wrapText="true">
+    <font>
+      <Font name="System Bold" size="32.0"/>
+    </font>
+    <padding>
+      <Insets left="15.0"/>
+    </padding>
+    <effect>
+      <Bloom threshold="0.0"/>
+    </effect>
+    <opaqueInsets>
+      <Insets/>
+    </opaqueInsets>
+  </Label>
+  <VBox alignment="TOP_CENTER" prefHeight="800.0" prefWidth="253.0" style="-fx-background-color: transparant;"
+        AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <Button fx:id="btnOverview" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#home"
+            prefHeight="60.0" prefWidth="253.0" stylesheets="@style.css" text="Home" textFill="#e7e5e5">
+      <graphic>
+        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../../../images/main.png"/>
+          <viewport>
+            <Rectangle2D/>
+          </viewport>
+          <effect>
+            <DropShadow/>
+          </effect>
+        </ImageView>
+      </graphic>
+      <opaqueInsets>
+        <Insets/>
+      </opaqueInsets>
+      <VBox.margin>
+        <Insets/>
+      </VBox.margin>
+      <padding>
+        <Insets left="15.0"/>
+      </padding>
+      <cursor>
+        <Cursor fx:constant="HAND"/>
+      </cursor>
+      <font>
+        <Font name="Bookman Old Style Bold" size="24.0"/>
+      </font>
+    </Button>
+    <Button fx:id="btnOrders" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false"
+            onAction="#createRecipe" prefHeight="60.0" prefWidth="313.0" stylesheets="@style.css" text="Create Recipe">
+      <graphic>
+        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../../../images/create.png"/>
+          <effect>
+            <DropShadow/>
+          </effect>
+        </ImageView>
+      </graphic>
+      <padding>
+        <Insets left="15.0"/>
+      </padding>
+      <cursor>
+        <Cursor fx:constant="HAND"/>
+      </cursor>
+      <font>
+        <Font name="Bookman Old Style Bold" size="24.0"/>
+      </font>
+    </Button>
+    <Button fx:id="btnCustomers" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false"
+            onAction="#weeklyDinnerList" prefHeight="60.0" prefWidth="313.0" stylesheets="@style.css"
+            text="Weekly Dinner">
+      <graphic>
+        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../../../images/week.png"/>
+          <effect>
+            <DropShadow/>
+          </effect>
+        </ImageView>
+      </graphic>
+      <padding>
+        <Insets left="15.0"/>
+      </padding>
+      <cursor>
+        <Cursor fx:constant="HAND"/>
+      </cursor>
+      <font>
+        <Font name="Bookman Old Style Bold" size="24.0"/>
+      </font>
+    </Button>
+    <Button fx:id="btnMessages" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false"
+            onAction="#messages" prefHeight="60.0" prefWidth="313.0" stylesheets="@style.css" text="Messages">
+      <graphic>
+        <ImageView fitHeight="32.0" fitWidth="32.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../../../images/messages.png"/>
+          <effect>
+            <DropShadow/>
+          </effect>
+        </ImageView>
+      </graphic>
+      <cursor>
+        <Cursor fx:constant="HAND"/>
+      </cursor>
+      <padding>
+        <Insets left="15.0"/>
+      </padding>
+      <font>
+        <Font name="Bookman Old Style Bold" size="24.0"/>
+      </font>
+    </Button>
+    <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#help" prefHeight="60.0"
+            prefWidth="313.0" stylesheets="@style.css" text="Help">
+      <graphic>
+        <ImageView fitHeight="32.0" fitWidth="32.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../../../images/help.png"/>
+          </image>
+          <effect>
+            <DropShadow/>
+          </effect>
+        </ImageView>
+      </graphic>
+      <cursor>
+        <Cursor fx:constant="HAND"/>
+      </cursor>
+      <padding>
+        <Insets left="15.0"/>
+      </padding>
+      <font>
+        <Font name="Bookman Old Style Bold" size="24.0"/>
+      </font>
+    </Button>
+    <opaqueInsets>
+      <Insets/>
+    </opaqueInsets>
+    <padding>
+      <Insets top="250.0"/>
+    </padding>
+  </VBox>
+  <AnchorPane fx:id="showSpace1" layoutX="253.0" layoutY="12.0" prefHeight="773.0" prefWidth="1012.0"
+              style="-fx-background-color: e7e5e5;"/>
+  <ImageView fitHeight="773.0" fitWidth="1012.0" layoutX="253.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true"
+             style="-fx-opacity: 40%;">
+    <image>
+      <Image url="@../../../Online%20Cooking%20Class%20Booking%20Discount%20Instagram%20Post%20(1012%20×%20773%20px).png"/>
+    </image>
+    <effect>
+      <ColorAdjust brightness="-0.07" saturation="-0.5"/>
+    </effect>
+  </ImageView>
+  <AnchorPane fx:id="showSpace" layoutX="253.0" layoutY="12.0" prefHeight="773.0" prefWidth="1012.0"
+              style="-fx-background-color: transparant;"/>
+  <VBox alignment="TOP_CENTER" layoutY="663.0" prefHeight="122.0" prefWidth="253.0"
+        style="-fx-background-color: transparant;">
+    <Button fx:id="btnPackages" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false"
+            onAction="#adminPanel" prefHeight="60.0" prefWidth="313.0" stylesheets="@style.css" text="Admin Panel">
+      <graphic>
+        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../../../images/admin.png"/>
+          <effect>
+            <DropShadow/>
+          </effect>
+        </ImageView>
+      </graphic>
+      <padding>
+        <Insets left="15.0"/>
+      </padding>
+      <cursor>
+        <Cursor fx:constant="HAND"/>
+      </cursor>
+      <font>
+        <Font name="Bookman Old Style Bold" size="24.0"/>
+      </font>
+    </Button>
+    <Button fx:id="btnSignout" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false"
+            onAction="#btnSignout" prefHeight="60.0" prefWidth="313.0" stylesheets="@style.css" text="Sign Out">
+      <graphic>
+        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../../../images/logOut.png"/>
+          <effect>
+            <DropShadow/>
+          </effect>
+        </ImageView>
+      </graphic>
+      <padding>
+        <Insets left="15.0"/>
+      </padding>
+      <cursor>
+        <Cursor fx:constant="HAND"/>
+      </cursor>
+      <font>
+        <Font name="Bookman Old Style Bold" size="24.0"/>
+      </font>
+    </Button>
+  </VBox>
+</AnchorPane>

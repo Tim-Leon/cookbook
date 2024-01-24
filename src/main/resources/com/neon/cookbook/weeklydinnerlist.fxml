@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neon.cookbook.WeeklyDinnerListController">
+  <children>
+    <ScrollPane layoutX="541.0" layoutY="106.0" prefHeight="561.0" prefWidth="409.0">
+      <content>
+        <VBox fx:id="shoppingList" layoutX="14.0" layoutY="14.0" prefHeight="558.0" prefWidth="406.0" />
+      </content>
+    </ScrollPane>
+    <ScrollPane layoutX="63.0" layoutY="106.0" prefHeight="561.0" prefWidth="409.0">
+      <content>
+        <VBox fx:id="weeklyDinnerList" layoutX="-4.0" prefHeight="558.0" prefWidth="406.0" />
+      </content>
+    </ScrollPane>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="63.0" layoutY="50.0" prefHeight="35.0" prefWidth="194.0" text="Weekly dinner">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="541.0" layoutY="50.0" prefHeight="35.0" prefWidth="194.0" text="Shoppinglist" textAlignment="CENTER">
+      <font>
+        <Font name="Bookman Old Style Bold" size="18.0" />
+      </font>
+    </Label>
+    <Button layoutX="409.0" layoutY="699.0" mnemonicParsing="false" onAction="#backButton" prefHeight="35.0" prefWidth="194.0" stylesheets="@buttons.css" text="Back">
+      <font>
+        <Font name="Bookman Old Style Bold" size="18.0" />
+      </font>
+    </Button>
+    <MenuButton fx:id="weekDropDown" alignment="CENTER" layoutX="278.0" layoutY="50.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="194.0" text="Week">
+      <font>
+        <Font name="Bookman Old Style Bold" size="18.0" />
+      </font>
+    </MenuButton>
+    <Label fx:id="shoppingListWeek" alignment="CENTER" contentDisplay="CENTER" layoutX="756.0" layoutY="50.0" prefHeight="35.0" prefWidth="194.0" text="All weeks">
+      <font>
+        <Font name="System Bold" size="18.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>

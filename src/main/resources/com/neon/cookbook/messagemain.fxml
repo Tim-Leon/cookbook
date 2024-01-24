@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1012.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neon.cookbook.MessagemainController">
+  <children>
+    <ScrollPane fx:id="scrollPaneId" layoutX="59.0" layoutY="33.0" prefHeight="558.0" prefWidth="897.0" style="-fx-background-color: transparent;" visible="false">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="556.0" prefWidth="895.0" style="-fx-background-color: transparent;">
+          <children>
+            <FlowPane fx:id="messageBoxId" prefHeight="558.0" prefWidth="897.0" style="-fx-background-color: transparent;" />
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>
